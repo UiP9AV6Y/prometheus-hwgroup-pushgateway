@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Portal>
+    <DeviceName>HWg-STE in kitchen</DeviceName>
+    <!--
+    0 = All OK, Log buffer data erased (equal to none <Status> tag found)
+    1 = Server Busy, Log buffer data in IP sensor device not erased (available for next push period)
+    -->
+    <Status>0<Status>
+    <PushPeriod>10</PushPeriod>
+    <LogPeriod>0</LogPeriod>
+    <PortalMessage></PortalMessage>
+    <ServerAddres>http://192.168.10.2/portal.xml</ServerAddres>
+    <PortalPort>80</PortalPort>
+    <APLimit>30</APLimit>
+    <Cmd/>
+    <File/>
+  </Portal>
+  <Time>
+    <Timestamp>151454546</Timestamp>
+  </Time>
+  <Sensors>
+    <Entry>
+      <ID>215</ID>
+      <Name>Sensor 215</Name>
+    </Entry>
+  </Sensors>
+</Root>

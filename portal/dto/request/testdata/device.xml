@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Agent>
+    <Version>1.1.7</Version>
+    <XmlVer>1.03</XmlVer>
+    <!--
+    52 – HWg-STE push
+    55 – HWg-PWRxx
+    70 – HWg-STE Plus
+    43 – HWg-WLD
+    50 – HWg-SMS-GW2
+    65 – Poseidon2 3266
+    66 – Poseidon2 3268
+    67 – Poseidon2 3468
+    68 – Poseidon2 4002
+    -->
+    <Model>52</Model>
+    <vendor_id>0</vendor_id>
+    <MAC>00:0A:59:03:0C:91</MAC>
+    <EMAI>012345678901234</EMAI>
+    <SerNum>6005120001</SerNum>
+  </Agent>
+  <Network>
+    <IPAddr>192.168.10.20</IPAddr>
+    <Submask>255.255.255.0</Submask>
+    <Gateway>192.168.1.253</Gateway>
+    <HttpPort>80</HttpPort>
+  </Network>
+  <Time>
+    <TimeZone>1</TimeZone>
+    <SummerTime>1</SummerTime>
+    <Timestamp>151454546</Timestamp>
+    <UpTime>300</UpTime>
+  </Time>
+  <Portal>
+    <DeviceName>HWg-STE plus kitchen</DeviceName>
+    <!--
+    0 = Periodic data push
+    1 = Event data push (Autopush)
+    2 = manual push from WWW (Initialization)
+    -->
+    <PushSource>0</PushSource>
+    <PushPeriod>10</PushPeriod>
+    <LogPeriod>0</LogPeriod>
+    <APLimit>30</APLimit>
+    <APSourceID></APSourceID>
+    <ServerAddres>http://192.168.10.2/portal.xml</ServerAddres>
+    <PortalPort>80</PortalPort>
+    <File/>
+    <SetupCRC>15485498456</SetupCRC>
+  </Portal>
+  <Sensors>
+    <Entry>
+      <ID>215</ID>
+      <Name>Sensor 215</Name>
+      <Units>C</Units>
+      <Exp>-1</Exp>
+      <Value>245</Value>
+      <!--
+      0 = Value unknow
+      1 = Value OK
+      2 = Sensor invalid
+      3 = Device invalid
+      4 = Out Of Range Low
+      5 = Out Of Range Hi
+      -->
+      <Status>1</Status>
+      <ValueLog>
+        <Value>245;245;245;245</Value>
+        <TimeOffset>-7;-5;-3;0</TimeOffset>
+        <Status>1;1;0;1</Status>
+      </ValueLog>
+    </Entry>
+  </Sensors>
+  <Meters>
+    <Entry>
+      <ID>1</ID>
+      <Name>Landis</Name>
+      <Address>1</Address>
+      <SecAddress>94653673</SecAddress>
+      <Values>
+        <Entry>
+          <ID>1001</ID>
+          <Name>Power</Name>
+          <Unit>kWh</Unit>
+          <Value>84</Value>
+          <Exp>-3</Exp>
+          <Status>1</Status>
+        </Entry>
+      </Values>
+    </Entry>
+  </Meters>
+  <Inputs>
+    <Entry>
+      <ID>1</ID>
+      <Name>Input 1</Name>
+      <Value>1</Value>
+      <ValueLog>
+        <Value>0;0;1;1</Value>
+        <TimeOffset>-7;-5;-3;0</TimeOffset>
+      </ValueLog>
+    </Entry>
+  </Inputs>
+  <Outputs>
+    <Entry>
+      <ID>151</ID>
+      <Name>Output 1</Name>
+      <Value>1</Value>
+      <ValueLog>
+        <Value>0;0;1;1</Value>
+        <TimeOffset>-7;-5;-3;0</TimeOffset>
+      </ValueLog>
+    </Entry>
+  </Outputs>
+</Root>
